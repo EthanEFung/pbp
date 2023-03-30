@@ -244,13 +244,6 @@ func (m model) headerView() string {
 	return titleStyle.Render(m.header)
 }
 
-func max(x, y int) int {
-	if y > x {
-		return y
-	}
-	return x
-}
-
 // watchCmd represents the watch command
 var watchCmd = &cobra.Command{
 	Use:   "watch",
